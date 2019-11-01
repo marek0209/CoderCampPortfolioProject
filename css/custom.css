@@ -1,4 +1,59 @@
 /*Marek Urbaniec Portfolio custom CSS*/
+body{
+    width: 100%;
+    height: auto;
+}
 .BrandText{
     font-family: 'Lato', sans-serif;
+}
+.landing{
+    display: flex;
+}
+.home-inner{
+    background-image:url(photo/background.jpg);
+
+}
+section.one{
+    display:flex;
+    height: 100vh;
+	position: relative;
+	background: url(../photo/background.jpg) top no-repeat;
+	background-size: cover;
+    transition: all .4s;
+    justify-content: center;
+    align-items: center;
+}
+
+section.one h3{
+    font-family: 'Lato', sans-serif;
+	font-size: 10vh;
+    margin: 0;
+    color:#4a4a4a;
+    text-align: center;
+
+    /* text-transform: uppercase; */
+}
+
+section.one p{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+#particles-js {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+section.two{
+    display: flex;
+    height: 100vh;
+    position: relative;
+    background-color: #4a4a4a;
+    transition: all .4s;
+    justify-content: center;
+    align-items: center;
 }
