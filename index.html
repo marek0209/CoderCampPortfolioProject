@@ -10,7 +10,10 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto|Ubuntu&display=swap" rel="stylesheet">
+    <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -41,6 +44,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#three">Skills</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#four">Contact</a>
+          </li>
       </ul>
     </div>
   </nav>
@@ -48,7 +54,7 @@
   <!-- Begin of section one -->
   <section class="one" id="one">
     <div id="particles-js"></div>
-    <div class="text-area">
+    <div class="home-text">
       <h3>Marek Urbaniec</h3>
       <p>Junior Front-end Developer, student of IT </p>
     </div>
@@ -61,17 +67,17 @@
     </div>
     <div class="about-me-card">
 
-      <div class="profile-image">
+      <div class="profile-image about">
         <img src="/photo/profile.png" alt="Steve Jobs">
       </div>
-      <div class="quick-info">
+      <div class="quick-info about">
         <div><span>Full name: </span> <span class="color">Marek Urbaniec</span></div>
         <div><span>Age: </span> <span class="color">20</span></div>
-        <div><span>Profile: </span> <span class="color">Front-end Developer, Studednt</span></div>
+        <div><span>Profile: </span> <span class="color">Front-end Developer</span></div>
         <div><span>Phone: </span> <span class="color">+48 698 868 283</span></div>
         <div><span>E-mail: </span> <span class="color">marek.urbaniec@gmail.com</span></div>
       </div>
-      <div class="long-info">
+      <div class="long-info about">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat a officia beatae optio, aliquid
         recusandae ipsum temporibus. Nisi temporibus sapiente eos ea odio! Dolorum repellat magnam explicabo asperiores.
         Libero!
@@ -90,17 +96,54 @@
   </div>
   <div class="skill">
     <img src="photo/frontend.svg" alt="Front-end">
-    <h1>Front End</h1>
+    <h1>Front-end</h1>
     <h3>HTML, CSS, JavaScript</h3>
   </div>
   <div class="skill">
     <img src="photo/backend.svg" alt="Backend">
-    <h1>Back End</h1>
+    <h1>Back-end</h1>
     <h3>PHP, Node.js</h3>
 
   </div>
 </div>
 
+  </section>
+
+  <section class="four" id="four">
+    <div class="contact-header">
+      <h1>Contact</h1>
+    </div>
+    <div class="contact-container">
+      <div class="contact-box contact">
+        <div class="contact-section">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <h3>If you have any questions, send me a message and I will answer you as soon as possible !</h3>
+        </div>
+        <div class="contact-section">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+
+        </div>
+        <div class="contact-section">
+          <h3>Marek Urbaniec</h3>
+          <h3>Poland, Katowice</h3>
+          <h3>+48 698 868 283</h3>
+          <h3>marek.urbaniec1@gmail.com</h3>
+        </div>
+          
+      </div>
+      
+        <form class="form-box contact">
+            <input type="text" name="name" placeholder="Name" class="input-text">
+            <input type="email" name="email" placeholder="E-mail" class="input-text">
+            <input type="text" name="topc" placeholder="Topic" class="input-text">
+            <textarea name="message" cols="30" rows="10" placeholder="Your message"class="text-area"></textarea>
+            <button type="button" class="btn btn-success">Send</button>
+        </form>
+      </div>
+    </div>
   </section>
 
 

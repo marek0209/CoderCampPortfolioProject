@@ -2,6 +2,7 @@
 body {
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 .BrandText {
@@ -20,6 +21,7 @@ body {
 section.one {
     display: flex;
     height: 100vh;
+    width:100%;
     position: relative;
     background: url(../photo/background.jpg) top no-repeat;
     background-size: cover;
@@ -27,10 +29,13 @@ section.one {
     justify-content: center;
     align-items: center;
 }
+.home-text{
+    text-align: center;
+}
 
 section.one h3 {
     font-family: 'Lato', sans-serif;
-    font-size: 10vh;
+    font-size: 9vh;
     margin: 0;
     color: #4a4a4a;
     text-align: center;
@@ -60,30 +65,8 @@ section.two {
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: all .4s;
 }
-
-.about-me-card {
-    padding: 10vh 10vh;
-    height: 80vh;
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-@media (max-width: 550px){
-    .about-me-card{
-        flex-direction: column;
-    }
-}
-
-.about-me-card span {
-    font-family: 'Raleway', sans-serif;
-    font-size: 3vh;
-    font-weight: 700;
-}
-
 .about-me-header {
     align-self: flex-start;
     margin-top: 10vh;
@@ -91,8 +74,45 @@ section.two {
 
 }
 
-.about-me-card img {
-    width:10vw;
+.about-me-card {
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    align-content: center;
+}
+@media (max-width: 800px){
+    .about-me-card{
+        flex-direction: column;
+        align-content: center;
+    }
+    .profile-image{
+        width: 100% !important;
+        height: 30%;
+        align-content: center;
+    }
+    .quick-info{
+        width: 100% !important;
+        height: 40%;
+        align-content: center;
+    }
+    .long-info{
+        width: 100% !important;
+        height: 30%;
+       text-align: center;
+    }
+}
+.quick-info div span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+.profile-image img{
+    height: 20vh;
 }
 
 .profile-image {
@@ -100,18 +120,22 @@ section.two {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 20%;
     
 
 }
 
 .quick-info {
     display: flex;
-    align-content: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 10%;
+    justify-content:center;
+    align-content: flex-start;
+    padding-left: 10%;
     box-sizing: border-box;
-
+    width: 40%;
+}
+.quick-info div{
+    padding-left: 10%;
 }
 
 .long-info {
@@ -119,6 +143,7 @@ section.two {
     display: flex;
     align-items: center;
     font-size: 2vh;
+    width:40%;
     
 }
 
@@ -142,28 +167,35 @@ section.three{
     margin-left: 5vw;   
 }
 .skills-container{
-    padding: 10vh 10vh;
-    height: 80vh;
-    width: 90vw;
+    height: 90vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
+    
 }
 
 .skill{ 
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     flex-direction: column;
     text-align: center;
     width:33%;
 }
-@media(max-width:550px){
+@media(max-width:600px){
     .skills-container{
         flex-direction: column;
     }
     .skill{
-        width: 90%;
+        width: 100%;
+        height: 33%;
     }
+    .skill h1{
+       font-size: 100% !important;
+    }
+    .skill h3{
+        font-size: 80% !important;W
+     }
 }
 
 .skill img{
@@ -188,4 +220,135 @@ section.three{
 }
 .skill:nth-child(3){
     grid-column:3;
+}
+
+section.four{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-header{
+    align-self: flex-start;
+    margin-top: 10vh;
+    margin-left: 5vw;   
+}
+.contact-container{
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width:600px){
+    .contact-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact{
+        width: 100% !important;
+        height: 45%;
+    }
+    .contact-box{
+        width: 100%;
+    }
+    .contact-section h3{
+        font-size: 2vh!important;
+    }
+    .contact-section i{
+        font-size: 3vh !important;
+    }
+    
+}
+.contact-box{
+    height: 100%;
+    width:40%;
+    background-color:#73bd63;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact-section h3{
+    font-size: 3vh;
+    font-family: 'Ubuntu', sans-serif;
+    color:white;
+}
+.contact-section{
+    width: 100%;
+    height: 33%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.contact-section i{
+    
+    font-size: 5vh;
+    color:white;
+    margin-top:5%;
+    margin-bottom: 5%;;
+}
+.contact-section h3{
+    font-size: 3vh;
+}
+.contact-section:nth-child(1){
+    text-align: center;
+}
+.contact-section:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.contact-section:nth-child(3){
+    text-align: center;
+}
+
+.contact-section i:hover{
+    color: yellow;
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+    width:60%;
+}
+.form-box input{
+    margin: 20px;
+    border-radius: 5px;
+    border:none;
+    background-color:#F8F9FA;
+    width:80%;
+    
+}
+
+.form-box button{
+    width: 20%;
+    align-self: flex-end;
+    margin: 5%;
+}
+.input-text{
+    padding-left:5%;
+    border:none;
+    align-self: center;
+    height: 20%;
+}
+.text-area{
+    align-self: center;
+    padding-left:5%;
+    border: none;
+    border-radius: 15px;
+    width: 80%;
+    font-size: 3vh;
+    min-height: 10%;
+}
+.message{
+    min-width: 20%;
+    border: none;
 }
