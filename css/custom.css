@@ -66,11 +66,16 @@ section.two {
     padding: 10vh 10vh;
     height: 80vh;
     width: 90vw;
-    display: grid;
-    grid-template-columns: 20% 30% 50%;
+    display: flex;
+    flex-direction: row;
     background-color: #f2f2f2;
     border-radius: 5px;
     box-sizing: border-box;
+}
+@media (max-width: 550px){
+    .about-me-card{
+        flex-direction: column;
+    }
 }
 
 .about-me-card span {
@@ -87,32 +92,34 @@ section.two {
 }
 
 .about-me-card img {
-    width: 100%
+    width:10vw;
 }
 
 .profile-image {
-    grid-column: 1;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: center;
+    
 
 }
 
 .quick-info {
-    grid-column: 2;
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
     padding: 10%;
     box-sizing: border-box;
+
 }
 
 .long-info {
-    grid-column: 3;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    font-size: 2vh;
+    
 }
 
 .color {
@@ -126,6 +133,7 @@ section.three{
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 .skills-header{
@@ -137,15 +145,25 @@ section.three{
     padding: 10vh 10vh;
     height: 80vh;
     width: 90vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
 }
 
-.skill{
+.skill{ 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    width:33%;
+}
+@media(max-width:550px){
+    .skills-container{
+        flex-direction: column;
+    }
+    .skill{
+        width: 90%;
+    }
 }
 
 .skill img{
@@ -155,6 +173,11 @@ section.three{
 
 .skill h1{
     color: #46a832;
+    font-size: 4vh;
+}
+.skill h3{
+    color: black;
+    font-size: 3vh;
 }
 
 .skill:nth-child(1){
