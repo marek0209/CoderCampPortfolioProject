@@ -4,11 +4,13 @@ body {
     height: auto;
     overflow-x: hidden;
 }
-.page{
-    overflow-y:scroll;
-    scroll-behavior:smooth;
+
+.page {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     scroll-snap-type: mandatory;
 }
+
 .BrandText {
     font-family: 'Lato', sans-serif;
 }
@@ -21,18 +23,20 @@ body {
     background-image: url(photo/background.jpg);
 
 }
-@media (max-width:700px){
-    .BrandText{
+
+@media (max-width:700px) {
+    .BrandText {
         display: none;
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
         font-size: 1rem;
     }
 }
-@media (max-width:250px){
-    #logo 
-    {
-         display: none !important;
+
+@media (max-width:250px) {
+    #logo {
+        display: none !important;
     }
 }
 
@@ -40,7 +44,7 @@ section.one {
     display: flex;
     height: 100vh;
     width: 100vw;
-    
+
     background: url(../photo/background.jpg) top no-repeat;
     background-size: cover;
     transition: all .4s;
@@ -67,8 +71,8 @@ section.one p {
     text-align: center;
 }
 
-@media(max-width:300px){
-    section.one h3{
+@media(max-width:300px) {
+    section.one h3 {
         font-size: 5vh;
     }
 }
@@ -118,7 +122,8 @@ section.two {
         align-content: center;
         height: 90vh;
     }
-    .about-me-header{
+
+    .about-me-header {
         height: 10vh;
     }
 
@@ -127,6 +132,7 @@ section.two {
         height: 20vh !important;
         align-content: center;
     }
+
     .profile-image img {
         height: 70% !important;
     }
@@ -134,7 +140,7 @@ section.two {
     .quick-info {
         width: 100% !important;
         height: 30vh;
-        align-items:  baseline !important;
+        align-items: baseline !important;
     }
 
     .long-info {
@@ -143,68 +149,84 @@ section.two {
         box-sizing: border-box;
     }
 }
+
 @media (max-width: 350px) {
-    section.two{
-        height: 135vh!important;
+    section.two {
+        height: 135vh !important;
     }
-    .about-me-card{
-        height: 100%!important;
-        width:100%;
+
+    .about-me-card {
+        height: 100% !important;
+        width: 100%;
     }
-    .about-me-header{
-        height: 10vh!important;
+
+    .about-me-header {
+        height: 10vh !important;
         padding-top: 5vh;
     }
+
     .quick-info h3 {
         font-size: 1vh;
     }
-    .quick-info{
+
+    .quick-info {
         align-items: flex-start !important;
-        height:35vh !important;
+        height: 35vh !important;
         margin-bottom: 10%;
     }
-    .long-info{
-        height:35vh !important;
+
+    .long-info {
+        height: 35vh !important;
     }
-    .profile-image{
-        height:35vh;
+
+    .profile-image {
+        height: 35vh;
     }
-    .about-me-header h1{
+
+    .about-me-header h1 {
         font-size: 1rem;
     }
 }
-@media (max-width: 300px){
-    section.two{
-        height: 250vh!important;
+
+@media (max-width: 300px) {
+    section.two {
+        height: 250vh !important;
     }
-    .about-me-card{
-        height: 100%!important;
-        width:100%;
+
+    .about-me-card {
+        height: 100% !important;
+        width: 100%;
     }
-    .about-me-header{
-        height: 10vh!important;
+
+    .about-me-header {
+        height: 10vh !important;
         padding-top: 5vh;
     }
-    .profile-image{
+
+    .profile-image {
         height: 35vh;
     }
-    .quick-info{
+
+    .quick-info {
         height: 70vh;
     }
-    .long-info{
+
+    .long-info {
         margin-top: 40vh;
         height: 70vh;
     }
-    }
-@media (max-width: 150px){
-    section.two{
+}
+
+@media (max-width: 150px) {
+    section.two {
         height: 130vh;
     }
 
-    .long-info{
+    .long-info {
         align-items: center;
     }
-    .profile-image{
+
+    .profile-image {
         padding: 10%;
     }
 }
@@ -214,7 +236,7 @@ section.two {
     font-size: 3vh;
     font-weight: 700;
     word-wrap: break-word;
-    
+
 }
 
 .profile-image img {
@@ -230,6 +252,7 @@ section.two {
 
 
 }
+
 .quick-info {
     padding-left: 10%;
     box-sizing: border-box;
@@ -237,8 +260,9 @@ section.two {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:baseline;
+    align-items: baseline;
 }
+
 .long-info {
     display: flex;
     align-items: center;
@@ -250,6 +274,7 @@ section.two {
     width: 40%;
 
 }
+
 .quick-info a {
     color: #46a832;
     word-wrap: break-word;
@@ -273,8 +298,8 @@ section.three {
 .skills-header {
     align-self: flex-start;
     margin-left: 5vw;
-    margin-top:10vh;
-    height:20vh;
+    margin-top: 10vh;
+    height: 20vh;
 }
 
 .skills-container {
@@ -297,7 +322,7 @@ section.three {
 @media(max-width:600px) {
     .skills-container {
         flex-direction: column;
-        height:90vh ;
+        height: 90vh;
     }
 
     .skill {
@@ -314,20 +339,23 @@ section.three {
     .skill h3 {
         font-size: 70% !important;
     }
-    .skills-header h1{
+
+    .skills-header h1 {
         font-size: 8vh;
     }
-    .skills-header{
+
+    .skills-header {
         height: 10vh;
-        margin-top:20vh;
+        margin-top: 20vh;
     }
 }
-@media(max-width:300px){
-    .skill{
-    padding-top: 30%;
+
+@media(max-width:300px) {
+    .skill {
+        padding-top: 30%;
     }
 }
- 
+
 
 
 .skill img {
@@ -370,8 +398,9 @@ section.four {
     display: flex;
     flex-direction: row;
 }
-.contact-section{
-    margin-top:20px;
+
+.contact-section {
+    margin-top: 20px;
 }
 
 @media (max-width:800px) {
@@ -388,7 +417,8 @@ section.four {
     .contact-box {
         height: 40vh !important;
     }
-    .form-box{
+
+    .form-box {
         height: 40vh !important;
     }
 
@@ -399,38 +429,47 @@ section.four {
     .contact-section i {
         font-size: 3vh !important;
     }
+
     .form-box button {
-        height:5vh !important;
+        height: 5vh !important;
         width: 25vw !important;
         align-self: center !important;
         font-size: 70%;
     }
-    .contact-header h1{
+
+    .contact-header h1 {
         font-size: 5vh !important;
     }
 
 }
-@media (max-width: 150px){
-    section.four{
+
+@media (max-width: 150px) {
+    section.four {
         height: 150vh;
     }
-    .contact-container{
+
+    .contact-container {
         height: 180vh;
     }
-    .contact-header{
+
+    .contact-header {
         height: 10vh;
     }
-    .contact-box{
+
+    .contact-box {
         height: 90vh !important;
     }
-    .form-box{
+
+    .form-box {
         height: 90vh;
     }
-    .form-box button{
+
+    .form-box button {
         width: 50vw !important;
     }
-    .contact-section{
-        margin-top:20px;
+
+    .contact-section {
+        margin-top: 20px;
     }
 }
 
