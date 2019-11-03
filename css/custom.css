@@ -21,12 +21,26 @@ body {
     background-image: url(photo/background.jpg);
 
 }
+@media (max-width:700px){
+    .BrandText{
+        display: none;
+    }
+    .navbar-toggler{
+        font-size: 1rem;
+    }
+}
+@media (max-width:250px){
+    #logo 
+    {
+         display: none !important;
+    }
+}
 
 section.one {
     display: flex;
     height: 100vh;
-    width: 100%;
-    position: relative;
+    width: 100vw;
+    
     background: url(../photo/background.jpg) top no-repeat;
     background-size: cover;
     transition: all .4s;
@@ -53,6 +67,12 @@ section.one p {
     text-align: center;
 }
 
+@media(max-width:300px){
+    section.one h3{
+        font-size: 5vh;
+    }
+}
+
 #particles-js {
     position: absolute;
     left: 0;
@@ -77,6 +97,7 @@ section.two {
     align-self: flex-start;
     margin-top: 10vh;
     margin-left: 5vw;
+    height: 20vh;
 
 }
 
@@ -95,39 +116,77 @@ section.two {
     .about-me-card {
         flex-direction: column;
         align-content: center;
+        height: 90vh;
+    }
+    .about-me-header{
+        height: 10vh;
     }
 
     .profile-image {
         width: 100% !important;
-        height: 30%;
+        height: 20vh;
         align-content: center;
+    }
+    .profile-image img {
+        height: 100%;
     }
 
     .quick-info {
         width: 100% !important;
-        height: 40%;
-        align-content: center;
+        height: 40vh;
+        align-items:  center !important;
     }
 
     .long-info {
         width: 100% !important;
-        height: 30%;
-        text-align: center;
+        height: 30vh;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 350px) {
+    section.two{
+        height: 120vh;
+    }
+    .about-me-card{
+        height: 100%;
+    }
+    .quick-info h3 {
+        font-size: 2vh;
+    }
+    .quick-info{
+        align-items: flex-start !important;
+    }
+    .long-info{
+        margin-top:10%;
+    }
+}
+@media (max-width: 150px){
+    section.two{
+        height: 130vh;
+    }
+
+    .long-info{
+        margin-top:20%;
+    }
+    .profile-image{
+        padding: 10%;
     }
 }
 
-.quick-info div span {
+.quick-info h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 3vh;
     font-weight: 700;
+    word-wrap: break-word;
+    
 }
 
 .profile-image img {
-    height: 20vh;
+    height: 50%;
+    box-sizing: border-box;
 }
 
 .profile-image {
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,35 +194,32 @@ section.two {
 
 
 }
-
 .quick-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-start;
     padding-left: 10%;
     box-sizing: border-box;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:baseline;
 }
-
-.quick-info div {
-    padding-left: 10%;
-}
-
-.quick-info a {
-    color: #46a832;
-}
-
 .long-info {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    font-size: 2vh;
+    justify-items: center;
+    text-align: center;
+    padding: 0 10%;
+    font-size: 3vh;
     width: 40%;
 
 }
+.quick-info a {
+    color: #46a832;
+    word-wrap: break-word;
+}
 
-.color {
+.quick-info b {
     color: #46a832;
 }
 
@@ -180,12 +236,13 @@ section.three {
 
 .skills-header {
     align-self: flex-start;
-    margin-top: 10vh;
     margin-left: 5vw;
+    margin-top:10vh;
+    height:20vh;
 }
 
 .skills-container {
-    height: 90vh;
+    height: 60vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -204,11 +261,14 @@ section.three {
 @media(max-width:600px) {
     .skills-container {
         flex-direction: column;
+        height:90vh ;
     }
 
     .skill {
         width: 100%;
-        height: 33%;
+        height: 20vh;
+        padding: 5%;
+        box-sizing: border-box;
     }
 
     .skill h1 {
@@ -216,10 +276,23 @@ section.three {
     }
 
     .skill h3 {
-        font-size: 80% !important;
-        W
+        font-size: 70% !important;
+    }
+    .skills-header h1{
+        font-size: 8vh;
+    }
+    .skills-header{
+        height: 10vh;
+        margin-top:20vh;
     }
 }
+@media(max-width:300px){
+    .skill{
+    padding-top: 30%;
+    }
+}
+ 
+
 
 .skill img {
     width: 50%;
@@ -236,17 +309,7 @@ section.three {
     font-size: 3vh;
 }
 
-.skill:nth-child(1) {
-    grid-column: 1;
-}
 
-.skill:nth-child(2) {
-    grid-column: 2;
-}
-
-.skill:nth-child(3) {
-    grid-column: 3;
-}
 
 section.four {
     display: flex;
@@ -271,8 +334,11 @@ section.four {
     display: flex;
     flex-direction: row;
 }
+.contact-section{
+    margin-top:20px;
+}
 
-@media (max-width:600px) {
+@media (max-width:800px) {
     .contact-container {
         flex-direction: column;
         justify-content: center;
@@ -280,11 +346,14 @@ section.four {
 
     .contact {
         width: 100% !important;
-        height: 45%;
+        height: 40vw;
     }
 
     .contact-box {
-        width: 100%;
+        height: 40vh !important;
+    }
+    .form-box{
+        height: 40vh !important;
     }
 
     .contact-section h3 {
@@ -294,7 +363,39 @@ section.four {
     .contact-section i {
         font-size: 3vh !important;
     }
+    .form-box button {
+        height:5vh !important;
+        width: 25vw !important;
+        align-self: center !important;
+        font-size: 70%;
+    }
+    .contact-header h1{
+        font-size: 5vh !important;
+    }
 
+}
+@media (max-width: 150px){
+    section.four{
+        height: 150vh;
+    }
+    .contact-container{
+        height: 180vh;
+    }
+    .contact-header{
+        height: 10vh;
+    }
+    .contact-box{
+        height: 90vh !important;
+    }
+    .form-box{
+        height: 90vh;
+    }
+    .form-box button{
+        width: 50vw !important;
+    }
+    .contact-section{
+        margin-top:20px;
+    }
 }
 
 .contact-box {
@@ -355,6 +456,7 @@ section.four {
 
 .contact-section:nth-child(3) {
     text-align: center;
+    word-wrap: break-word;
 }
 
 .contact-section i:hover {
@@ -368,7 +470,7 @@ section.four {
 }
 
 .form-box input {
-    margin: 20px;
+    margin: 2%;
     border-radius: 5px;
     border: none;
     background-color: #F8F9FA;
@@ -392,10 +494,11 @@ section.four {
 .text-area {
     align-self: center;
     padding-left: 5%;
+    padding-top: 5%;
     border: none;
     border-radius: 15px;
     width: 80%;
-    font-size: 3vh;
+    font-size: 2vh;
     min-height: 10%;
     background-color: #F8F9FA;
 }
