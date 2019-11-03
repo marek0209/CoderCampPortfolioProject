@@ -103,7 +103,7 @@ section.two {
 
 .about-me-card {
     height: 80vh;
-    width: 90vw;
+    width: 95vw;
     display: flex;
     flex-direction: row;
     background-color: #f2f2f2;
@@ -124,49 +124,85 @@ section.two {
 
     .profile-image {
         width: 100% !important;
-        height: 20vh;
+        height: 20vh !important;
         align-content: center;
     }
     .profile-image img {
-        height: 100%;
+        height: 70% !important;
     }
 
     .quick-info {
         width: 100% !important;
-        height: 40vh;
-        align-items:  center !important;
+        height: 30vh;
+        align-items:  baseline !important;
     }
 
     .long-info {
         width: 100% !important;
-        height: 30vh;
+        height: 40vh;
         box-sizing: border-box;
     }
 }
 @media (max-width: 350px) {
     section.two{
-        height: 120vh;
+        height: 135vh!important;
     }
     .about-me-card{
-        height: 100%;
+        height: 100%!important;
+        width:100%;
+    }
+    .about-me-header{
+        height: 10vh!important;
+        padding-top: 5vh;
     }
     .quick-info h3 {
-        font-size: 2vh;
+        font-size: 1vh;
     }
     .quick-info{
         align-items: flex-start !important;
+        height:35vh !important;
+        margin-bottom: 10%;
     }
     .long-info{
-        margin-top:10%;
+        height:35vh !important;
+    }
+    .profile-image{
+        height:35vh;
+    }
+    .about-me-header h1{
+        font-size: 1rem;
     }
 }
+@media (max-width: 300px){
+    section.two{
+        height: 250vh!important;
+    }
+    .about-me-card{
+        height: 100%!important;
+        width:100%;
+    }
+    .about-me-header{
+        height: 10vh!important;
+        padding-top: 5vh;
+    }
+    .profile-image{
+        height: 35vh;
+    }
+    .quick-info{
+        height: 70vh;
+    }
+    .long-info{
+        margin-top: 40vh;
+        height: 70vh;
+    }
+    }
 @media (max-width: 150px){
     section.two{
         height: 130vh;
     }
 
     .long-info{
-        margin-top:20%;
+        align-items: center;
     }
     .profile-image{
         padding: 10%;
@@ -182,7 +218,7 @@ section.two {
 }
 
 .profile-image img {
-    height: 50%;
+    height: 30%;
     box-sizing: border-box;
 }
 
@@ -204,12 +240,12 @@ section.two {
     align-items:baseline;
 }
 .long-info {
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-items: center;
     text-align: center;
     padding: 0 10%;
+    box-sizing: border-box;
     font-size: 3vh;
     width: 40%;
 
