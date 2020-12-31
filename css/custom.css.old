@@ -1,0 +1,568 @@
+/*Marek Urbaniec Portfolio custom CSS*/
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.page {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+.BrandText {
+  font-family: "Lato", sans-serif;
+}
+
+.landing {
+  display: flex;
+}
+
+.home-inner {
+  background-image: url(photo/background.jpg);
+}
+
+@media (max-width: 700px) {
+  .BrandText {
+    display: none;
+  }
+
+  .navbar-toggler {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 250px) {
+  #logo {
+    display: none !important;
+  }
+}
+
+section.one {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+  background: url(../photo/background.jpg) top no-repeat;
+  background-size: cover;
+  transition: all 0.4s;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-text {
+  text-align: center;
+}
+
+section.one h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 9vh;
+  margin: 0;
+  color: #4a4a4a;
+  text-align: center;
+
+  /* text-transform: uppercase; */
+}
+
+section.one p {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 300px) {
+  section.one h3 {
+    font-size: 5vh;
+  }
+}
+
+#particles-js {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+section.two {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.4s;
+}
+
+.about-me-header {
+  align-self: flex-start;
+  margin-top: 10vh;
+  margin-left: 5vw;
+  height: 20vh;
+}
+
+.about-me-card {
+  height: 80vh;
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  align-content: center;
+}
+
+@media (max-width: 800px) {
+  .about-me-card {
+    flex-direction: column;
+    align-content: center;
+    height: 90vh;
+  }
+
+  .about-me-header {
+    height: 10vh;
+  }
+
+  .profile-image {
+    width: 100% !important;
+    height: 20vh !important;
+    align-content: center;
+  }
+
+  .profile-image img {
+    height: 70% !important;
+  }
+
+  .quick-info {
+    width: 100% !important;
+    height: 30vh;
+    align-items: baseline !important;
+  }
+
+  .long-info {
+    width: 100% !important;
+    height: 40vh;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 350px) {
+  section.two {
+    height: 135vh !important;
+  }
+
+  .about-me-card {
+    height: 100% !important;
+    width: 100%;
+  }
+
+  .about-me-header {
+    height: 10vh !important;
+    padding-top: 5vh;
+  }
+
+  .quick-info h3 {
+    font-size: 1vh;
+  }
+
+  .quick-info {
+    align-items: flex-start !important;
+    height: 35vh !important;
+    margin-bottom: 10%;
+  }
+
+  .long-info {
+    height: 35vh !important;
+  }
+
+  .profile-image {
+    height: 35vh;
+  }
+
+  .about-me-header h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  section.two {
+    height: 250vh !important;
+  }
+
+  .about-me-card {
+    height: 100% !important;
+    width: 100%;
+  }
+
+  .about-me-header {
+    height: 10vh !important;
+    padding-top: 5vh;
+  }
+
+  .profile-image {
+    height: 35vh;
+  }
+
+  .quick-info {
+    height: 70vh;
+  }
+
+  .long-info {
+    margin-top: 40vh;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 150px) {
+  section.two {
+    height: 130vh;
+  }
+
+  .long-info {
+    align-items: center;
+  }
+
+  .profile-image {
+    padding: 10%;
+  }
+}
+
+.quick-info h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3vh;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.profile-image img {
+  height: 30%;
+  box-sizing: border-box;
+}
+
+.profile-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.quick-info {
+  padding-left: 10%;
+  box-sizing: border-box;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.long-info {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  padding: 0 10%;
+  box-sizing: border-box;
+  font-size: 3vh;
+  width: 40%;
+}
+
+.quick-info a {
+  color: #46a832;
+  word-wrap: break-word;
+}
+
+.quick-info b {
+  color: #46a832;
+}
+
+section.three {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skills-header {
+  align-self: flex-start;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  height: 20vh;
+}
+
+.skills-container {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.skill {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 33%;
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    flex-direction: column;
+    height: 90vh;
+  }
+
+  .skill {
+    width: 100%;
+    height: 20vh;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+
+  .skill h1 {
+    font-size: 100% !important;
+  }
+
+  .skill h3 {
+    font-size: 70% !important;
+  }
+
+  .skills-header h1 {
+    font-size: 8vh;
+  }
+
+  .skills-header {
+    height: 10vh;
+    margin-top: 20vh;
+  }
+}
+
+@media (max-width: 300px) {
+  .skill {
+    padding-top: 30%;
+  }
+}
+
+.skill img {
+  width: 50%;
+  height: 50%;
+}
+
+.skill h1 {
+  color: #46a832;
+  font-size: 4vh;
+}
+
+.skill h3 {
+  color: black;
+  font-size: 3vh;
+}
+
+section.four {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-header {
+  align-self: flex-start;
+  margin-top: 10vh;
+  margin-left: 5vw;
+}
+
+.contact-container {
+  height: 80vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-section {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact {
+    width: 100% !important;
+    height: 40vw;
+  }
+
+  .contact-box {
+    height: 40vh !important;
+  }
+
+  .form-box {
+    height: 40vh !important;
+  }
+
+  .contact-section h3 {
+    font-size: 2vh !important;
+  }
+
+  .contact-section i {
+    font-size: 3vh !important;
+  }
+
+  .form-box button {
+    height: 5vh !important;
+    width: 25vw !important;
+    align-self: center !important;
+    font-size: 70%;
+  }
+
+  .contact-header h1 {
+    font-size: 5vh !important;
+  }
+}
+
+@media (max-width: 150px) {
+  section.four {
+    height: 150vh;
+  }
+
+  .contact-container {
+    height: 180vh;
+  }
+
+  .contact-header {
+    height: 10vh;
+  }
+
+  .contact-box {
+    height: 90vh !important;
+  }
+
+  .form-box {
+    height: 90vh;
+  }
+
+  .form-box button {
+    width: 50vw !important;
+  }
+
+  .contact-section {
+    margin-top: 20px;
+  }
+}
+
+.contact-box {
+  height: 100%;
+  width: 40%;
+  background-color: #73bd63;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-section h3 {
+  font-size: 3vh;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+.contact-section {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-section a {
+  color: white;
+}
+
+.contact-section i {
+  font-size: 5vh;
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.contact-section h3 {
+  font-size: 3vh;
+}
+
+.contact-section:nth-child(1) {
+  text-align: center;
+}
+
+.contact-section:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-section:nth-child(3) {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.contact-section i:hover {
+  color: yellow;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.form-box input {
+  margin: 2%;
+  border-radius: 5px;
+  border: none;
+  background-color: #f8f9fa;
+  width: 80%;
+}
+
+.form-box button {
+  width: 20%;
+  align-self: flex-end;
+  margin: 5%;
+}
+
+.input-text {
+  padding-left: 5%;
+  border: none;
+  align-self: center;
+  height: 20%;
+}
+
+.text-area {
+  align-self: center;
+  padding-left: 5%;
+  padding-top: 5%;
+  border: none;
+  border-radius: 15px;
+  width: 80%;
+  font-size: 2vh;
+  min-height: 10%;
+  background-color: #f8f9fa;
+}
+
+.message {
+  min-width: 20%;
+  border: none;
+}
