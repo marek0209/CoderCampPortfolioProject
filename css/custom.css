@@ -149,6 +149,65 @@ span.green a {
   color: var(--main-color);
 }
 
+/* Section three */
+section.three {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills-header {
+  flex-grow: 3;
+  padding-top: 20%;
+  padding-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.skills-container {
+  flex-grow: 7;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+}
+.skill {
+  flex-basis: 33%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 1rem;
+}
+
+.skill img {
+  width: 25%;
+  height: 25%;
+}
+
+.skill h4 {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.skill h5 {
+  font-size: 0.75rem;
+}
+
 @media only screen and (max-width: 300px) {
   .brandText {
     display: none;
@@ -179,6 +238,24 @@ span.green a {
   .about-me-header {
     padding-top: 10%;
   }
+
+  .skills-header {
+    padding-top: 10%;
+  }
+  .skill {
+    padding-top: 1rem;
+  }
+  .skills-container {
+    padding: 0;
+  }
+  .skill h4 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+  }
+
+  .skill h5 {
+    font-size: 1.25rem;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -207,6 +284,19 @@ span.green a {
   .long-info {
     font-size: 1.6rem;
     line-height: 2.61366rem;
+  }
+  .skill {
+    padding-top: 1.25rem;
+  }
+  .skill h4 {
+    font-size: 3.25rem;
+  }
+  .skill h5 {
+    font-size: 1.25rem;
+  }
+
+  .skills-header {
+    padding-top: 8%;
   }
 }
 
@@ -246,6 +336,27 @@ span.green a {
     line-height: 2.8rem;
     flex-basis: 100%;
     padding-left: 100px;
+  }
+  .skills-header {
+    padding-top: 8%;
+  }
+
+  .skills-container {
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .skill img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .skill h4 {
+    font-size: 2rem;
+  }
+  .skill h5 {
+    font-size: 0.75rem;
   }
 }
 
@@ -287,6 +398,30 @@ span.green a {
     flex-basis: 37%;
     padding-left: 5%;
   }
+
+  .skills-header {
+    flex-grow: 1;
+    padding-top: 5%;
+  }
+
+  .skills-container {
+    flex-grow: 9;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .skill img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .skill h4 {
+    font-size: 2rem;
+  }
+  .skill h5 {
+    font-size: 0.75rem;
+  }
 }
 
 @media only screen and (min-width: 2500px) {
@@ -305,6 +440,12 @@ span.green a {
 
   .brandText {
     font-size: 2rem;
+  }
+  .skill h4 {
+    font-size: 3.5rem;
+  }
+  .skill h5 {
+    font-size: 1.25rem;
   }
 }
 
@@ -336,5 +477,11 @@ span.green a {
   .long-info {
     font-size: 3rem;
     line-height: 4rem;
+  }
+  .skill h4 {
+    font-size: 8rem;
+  }
+  .skill h5 {
+    font-size: 3rem;
   }
 }
